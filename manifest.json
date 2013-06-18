@@ -1,0 +1,15 @@
+{
+   "name": "Domain name in title",
+   "description": "Adds the domain name for the current page to the title bar.",
+   "version": "0.0.1",
+   "manifest_version": 2,
+   "icons": {
+      "128": "icon-128.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png"
+   },
+   "content_scripts": [ {
+      "js": [ "urlintitle.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ]
+}
