@@ -1,10 +1,3 @@
-// UserScript
-// @name                URL in title
-// @namespace	        http://jean-francois.im/
-// @description	        Script that changes pages' titles to include their domain
-// @include		*
-// /UserScript
-
 
 var changeTitle = function() {
  	var protoDelimIndex = document.URL.indexOf("://");
