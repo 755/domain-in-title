@@ -10,12 +10,9 @@ var changeTitle = function() {
  	var protoDelimIndex = document.URL.indexOf("://");
  	
  	if(protoDelimIndex != -1) {
-  		var domainDelimIndex = document.URL.indexOf("/", protoDelimIndex + 4);
-  		if(domainDelimIndex != -1) {
-  			if(document.title.indexOf('[' + document.URL.slice(0, domainDelimIndex + 1) + ']') == -1) {
-   	            document.title=document.title + ' [' + document.URL.slice(0, domainDelimIndex + 1) + ']';
-  			}
-   		}
+        if(document.title.indexOf(' - ' + document.domain) == -1) {
+            document.title=document.title + ' - ' + document.domain;
+        }
   	}
 }
 
